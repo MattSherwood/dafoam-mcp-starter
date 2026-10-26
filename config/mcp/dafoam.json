@@ -1,0 +1,24 @@
+{
+  "$comment": "TEMPLATE, not a working config: dsh-mcp-client does not expand ~ or $HOME, so cwd must be an absolute path. scripts/install.sh generates the real ~/.dsh/profiles/web/cordis.patch.yml with your path substituted. Mirrors the official work/results/.mcp.json from https://github.com/DAFoam/mdo_agent_work (branch: docker).",
+  "mcpServers": {
+    "dafoam": {
+      "type": "stdio",
+      "command": "docker",
+      "cwd": "<ABSOLUTE-PATH-TO>/work/results",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "--platform", "linux/amd64",
+        "--network", "host",
+        "--mount", "type=bind,src=.,target=/home/dafoamuser/mount",
+        "-w", "/home/dafoamuser/mount",
+        "dafoam/agent:latest",
+        "bash", "-lc",
+        "source /home/dafoamuser/dafoam/loadDAFoam.sh && mdo-agent-deck-mcp"
+      ],
+      "env": {
+      }
+    }
+  }
+}

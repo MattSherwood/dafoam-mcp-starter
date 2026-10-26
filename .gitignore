@@ -1,0 +1,21 @@
+# DAFoam working directory (fetched by scripts/install.sh, not vendored)
+work/results/**
+
+# Case data: meshes, fields, plots, OpenFOAM time directories
+work/**/airfoil_*/
+work/**/processor*/
+work/**/postProcessing/
+work/**/plots/
+work/**/agent_workflow.json
+work/**/agent_state.json
+work/**/bash_*.sh
+work/**/log_*.txt
+
+# Rehearsal transcripts
+demo_transcript*.json
+
+# macOS / Python / editor noise
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
