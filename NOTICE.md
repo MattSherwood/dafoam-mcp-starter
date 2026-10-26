@@ -1,7 +1,12 @@
 # Third-party notices
 
-This repository contains **configuration, documentation and scripts only**. It
-does not vendor, link or redistribute any DAFoam software.
+This repository's own documentation and scripts are licensed under the
+**Apache License 2.0** (see `LICENSE` and `NOTICE`).
+
+That licence does **not** extend to the software this repository helps you
+run. The components below remain under their own terms. This repository
+contains **configuration, documentation and scripts only** — it does not
+vendor, link or redistribute any DAFoam software.
 
 ## DAFoam
 

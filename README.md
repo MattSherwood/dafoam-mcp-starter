@@ -84,6 +84,17 @@ inside `dafoam/agent` is closed source and distributed for evaluation only —
 this repo tells you how to pull and run it, and redistributes none of it. Read
 `NOTICE.md` before deploying anything commercially.
 
+## Licence
+
+[Apache License 2.0](LICENSE) — use it, modify it, ship it, including
+commercially. Attribution requirements are the usual Apache ones: keep `LICENSE`
+and `NOTICE` with any redistribution.
+
+This covers **this repository's documentation and scripts only**. It does not
+relicense DAFoam, OpenFOAM, or the MDO Agent Deck — the Agent Deck inside
+`dafoam/agent` is closed source and evaluation-only, so read `NOTICE.md` before
+building a commercial product on top of it.
+
 ## Requirements at a glance
 
 macOS or Linux (Windows via WSL2), 16 GiB RAM, ~25 GiB free disk, Docker (Colima
