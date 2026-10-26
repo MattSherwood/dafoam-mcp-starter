@@ -20,7 +20,7 @@ Two flags behave differently once the daemon is remote:
 
 | Flag | Local meaning | With `DOCKER_HOST=ssh://cloud` |
 |---|---|---|
-| `--mount src=.` | the CLI resolves `.` against its own cwd → `/Users/…/work/results`, then the daemon mounts it (verified) | the CLI still resolves it locally, so the **cloud daemon is asked to mount a macOS path it does not have**. Fails loudly (`no such file or directory`) — or, worse, silently mounts an unrelated same-named path if one exists |
+| `--mount src=.` | the CLI resolves `.` against its own cwd → `/Users/<you>/…/work/results`, then the daemon mounts it (verified) | the CLI still resolves it locally, so the **cloud daemon is asked to mount a macOS path it does not have**. Fails loudly (`no such file or directory`) — or, worse, silently mounts an unrelated same-named path if one exists |
 | `--network host` | binds the local VM's interfaces | binds the **cloud** host's interfaces |
 
 Consequences:
