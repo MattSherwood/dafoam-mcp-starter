@@ -368,6 +368,7 @@ python3 --version    # 3.15.0 on the reference machine
 | Document | What it covers |
 |---|---|
 | `README.md` | quickstart and project layout |
+| `docs/GETTING-STARTED.md` | first-time on-ramp: prerequisites, install, first case |
 | `docs/REPRODUCE.md` | this file — full component inventory |
 | `docs/INSTALL.md` | the official DAFoam procedure and every deviation, justified |
 | `docs/ARCHITECTURE.md` | DAFoam layers, DSH wiring, integration patterns |

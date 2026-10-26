@@ -24,12 +24,16 @@ cost real time to discover.
 | `scripts/verify_mcp.py` | raw MCP handshake — proves the server works, no LLM involved |
 | `scripts/demo_case.py` | deterministic single case over MCP (pre-warm or fallback) |
 | `config/mcp/dafoam.json` | MCP server descriptor template |
-| `docs/REPRODUCE.md` | **start here** — full component inventory with versions and links |
+| `docs/GETTING-STARTED.md` | **first-time on-ramp** — prerequisites, install, first case |
+| `docs/REPRODUCE.md` | full component inventory with versions and links |
 | `docs/INSTALL.md` | the official DAFoam procedure and every deviation, justified |
 | `docs/ARCHITECTURE.md` | layers, harness wiring, integration patterns |
 | `docs/RUNBOOK.md` | operate / verify / troubleshoot |
 | `docs/GLOSSARY.md` | one line per term — y⁺, RANS, Spalart–Allmaras, adjoints |
 | `docs/CLOUD-DOCKER.md` | running the compute elsewhere, and the mount trap |
+
+> **First time here?** Read [`docs/GETTING-STARTED.md`](docs/GETTING-STARTED.md) —
+> prerequisites checklist, 20-minute install, verification, and your first case.
 
 ## Quickstart
 
